@@ -23,20 +23,18 @@ Color[] combination;
 }
 
 class SecretCombination {
-- Combination secretCombination
-- void secretCombination()
+- void generateCombination()
 boolean matchCombination(ProposedCombination proposedCombination)
 print()
 }
 
 class ProposedCombination {
-- Combination proposedCombination
 - Error checkError()
 read()
 }
 
 class Result {
-- final int MAX_HOLES
++ final int MAX_HOLES
 - int whites
 - int blacks
 isWinner()
@@ -44,20 +42,25 @@ print()
 }
 
 enum Messages{
-HELLO "----- MASTERMIND -----"
-ATTEMPS "0 attempt(s)"
-SECRET_COMBINATION "xxxx"
-PROPOSE_COMBINATION "Propose a combination"
+TITLE
+ATTEMPS
+RESULT
+SECRET_COMBINATION
+PROPOSE_COMBINATION
 LOOSER
 WINNER
 }
 enum Color {
-char green
-char red
-char blue
-char yellow
-char orange
-char purple
+RED('r'),
+GREEN('g'),
+YELLOW('y'),
+ORANGE('o'),
+PURPLE('p'),
+BLUE('b');
+- char initial
++ get(int index)
++ write()
+
 }
 enum Error {
 LENGTH "Wrong proposed combination length"
