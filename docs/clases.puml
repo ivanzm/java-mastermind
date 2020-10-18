@@ -9,8 +9,8 @@ class Mastermind {
 class Board {
 - final int MAX_ATTEMPS
 - int attemps
-- List<Result> results
-- List<ProposedCombination> proposedCombinations
+- Result[] results
+- ProposedCombination[] proposedCombinations
 - SecretCombination secretCombination
 + isFinished()
 + add(ProposedCombination proposedCombination)
@@ -18,8 +18,9 @@ class Board {
 }
 
 abstract class Combination {
-List<Color> combination;
+Color[] combination;
 }
+
 class SecretCombination {
 - Combination secretCombination
 - void secretCombination()
