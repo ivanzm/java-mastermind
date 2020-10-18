@@ -10,7 +10,11 @@ class Board {
 - final int MAX_ATTEMPS
 - int attemps
 - List<Result> results
+- List<ProposedCombination> proposedCombinations
 - SecretCombination secretCombination
++ isFinished()
++ add(ProposedCombination proposedCombination)
++ print()
 }
 
 abstract class Combination {
@@ -19,21 +23,22 @@ List<Color> combination;
 class SecretCombination {
 - Combination secretCombination
 - void secretCombination()
-+ boolean matchCombination(ProposedCombination proposedCombination)
-+ print()
+boolean matchCombination(ProposedCombination proposedCombination)
+print()
 }
 
 class ProposedCombination {
 - Combination proposedCombination
 - Error checkError()
-+ read()
+read()
 }
 
 class Result {
-- SecretCombination secretCombination
-- List<Combination> combinations
-- isWinner()
-+ print()
+- final int MAX_HOLES
+- int whites
+- int blacks
+isWinner()
+print()
 }
 
 enum Messages{
@@ -41,7 +46,8 @@ HELLO "----- MASTERMIND -----"
 ATTEMPS "0 attempt(s)"
 SECRET_COMBINATION "xxxx"
 PROPOSE_COMBINATION "Propose a combination"
-
+LOOSER
+WINNER
 }
 enum Color {
 char green
