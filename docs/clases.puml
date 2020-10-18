@@ -1,0 +1,71 @@
+@startuml
+
+class Mastermind {
+- void play()
+- isResumeGame()
++ static void main(String[] args)
+}
+
+class Board {
+- final int MAX_ATTEMPS
+- int attemps
+- List<Result> results
+- SecretCombination secretCombination
+}
+
+abstract class Combination {
+List<Color> combination;
+}
+class SecretCombination {
+- Combination secretCombination
+- void secretCombination()
++ boolean matchCombination(ProposedCombination proposedCombination)
++ print()
+}
+
+class ProposedCombination {
+- Combination proposedCombination
+- Error checkError()
++ read()
+}
+
+class Result {
+- SecretCombination secretCombination
+- List<Combination> combinations
+- isWinner()
++ print()
+}
+
+enum Messages{
+HELLO "----- MASTERMIND -----"
+ATTEMPS "0 attempt(s)"
+SECRET_COMBINATION "xxxx"
+PROPOSE_COMBINATION "Propose a combination"
+
+}
+enum Color {
+char green
+char red
+char blue
+char yellow
+char orange
+char purple
+}
+enum Error {
+LENGTH "Wrong proposed combination length"
+COLOR "Wrong colors, they must be: rbygop"
+}
+
+Mastermind *-- Board
+Board o-- "0..10" Result
+Combination --|> SecretCombination
+Combination --|> ProposedCombination
+Result --> SecretCombination
+Result --> ProposedCombination
+Combination --> Color
+Mastermind ..> Messages
+Board ..> Messages
+Result ..> Messages
+Color ..> Error
+
+@enduml
