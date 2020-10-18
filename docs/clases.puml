@@ -1,8 +1,9 @@
 @startuml
 
 class Mastermind {
-- void play()
 - isResumeGame()
+- void playGame()
++ play()
 + static void main(String[] args)
 }
 
