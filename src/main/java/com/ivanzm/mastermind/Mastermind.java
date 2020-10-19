@@ -1,5 +1,7 @@
 package com.ivanzm.mastermind;
 
+import com.ivanzm.utils.Console;
+
 public class Mastermind {
 
     private Board board;
@@ -7,7 +9,7 @@ public class Mastermind {
     public void play() {
         do {
             this.playGame();
-        } while (!this.isResumedGame());
+        } while (this.isResumedGame());
     }
 
     private void playGame() {
@@ -19,10 +21,23 @@ public class Mastermind {
             proposedCombination.read();
             this.board.add(proposedCombination);
         } while (!this.board.isFinished());
-
+        this.board.printFinalResult();
     }
 
     private boolean isResumedGame() {
+        final char AFFIRMATIVE = 'y';
+        final char NEGATIVE = 'n';
+        boolean error;
+        char answer;
+        do {
+            Message.RESUME.writeln();
+            answer = Console.instance().readChar("");
+            error = answer == AFFIRMATIVE || answer == NEGATIVE ? false : true;
+        } while (error);
+
+        if (!error && answer == AFFIRMATIVE) {
+            return true;
+        }
         return false;
     }
 

@@ -9,8 +9,9 @@ enum Message {
     PROPOSED_COMBINATION("Propose a combination"),
     RESULT_BLACKS(" blacks and "),
     RESULT_WHITES(" whites"),
-    LOOSER("Lose"),
-    WINNER("Win!");
+    RESUME("Do you want to continue playing? (y/n)"),
+    LOOSER("You Lose .. :("),
+    WINNER("You Win!");
 
     private String message;
 

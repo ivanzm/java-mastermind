@@ -21,9 +21,16 @@ public class Board {
     }
 
     boolean isFinished() {
-        return this.results[this.attemps].isWinner() || this.attemps == MAX_ATTEMPS;
+        return isWinner() || isLooser();
     }
 
+    boolean isWinner() {
+        return this.results[this.attemps - 1].isWinner();
+    }
+
+    boolean isLooser() {
+        return this.attemps == MAX_ATTEMPS;
+    }
 
     void print() {
         Message.writeln("");
@@ -36,6 +43,14 @@ public class Board {
         for (int i = 0; i < this.attemps; i++) {
             this.proposedCombinations[i].println();
             this.results[i].print();
+        }
+    }
+
+    void printFinalResult() {
+        if (this.isWinner()) {
+            Message.WINNER.writeln();
+        } else {
+            Message.LOOSER.writeln();
         }
     }
 }
