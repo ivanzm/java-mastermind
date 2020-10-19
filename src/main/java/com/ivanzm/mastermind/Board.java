@@ -17,6 +17,7 @@ public class Board {
     void add(ProposedCombination proposedCombination) {
         this.proposedCombinations[this.attemps] = proposedCombination;
         this.results[this.attemps] = this.secretCombination.getResult(proposedCombination);
+        attemps++;
     }
 
     boolean isFinished() {
@@ -24,10 +25,13 @@ public class Board {
     }
 
     void print() {
-        Message.ATTEMPTS.write();
-        Message.write(String.valueOf(this.attemps));
         Message.writeln("");
-        //this.secretCombination.
+        Message.ATTEMPTS.write();
+        Message.write(this.attemps);
+        Message.write(" -- the pass is: ");
+        this.secretCombination.println();
+        Message.writeln("");
+
         for (int i = 0; i < this.attemps; i++) {
             this.proposedCombinations[i].println();
             this.results[i].print();

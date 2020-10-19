@@ -4,7 +4,8 @@ import com.ivanzm.utils.Console;
 
 enum Error {
     LENGTH("Wrong proposed combination length"),
-    COLOR("Wrong colors, they must be: rbygop");
+    COLOR("Wrong colors, they must be: rbygop"),
+    DUPLICATE("Wrong colors, repeated color");
 
     private String message;
 

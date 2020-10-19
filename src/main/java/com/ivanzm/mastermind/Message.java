@@ -7,7 +7,8 @@ enum Message {
     ATTEMPTS("attempts attempt(s): "),
     SECRET_COMBINATION("xxxx"),
     PROPOSED_COMBINATION("Propose a combination"),
-    RESULT(" --> #blacks blacks and #whites whites"),
+    RESULT_BLACKS(" blacks and "),
+    RESULT_WHITES(" whites"),
     LOOSER("Lose"),
     WINNER("Win!");
 
@@ -18,6 +19,10 @@ enum Message {
     }
 
     static void write(String message) {
+        Console.instance().write(message);
+    }
+
+    static void write(int message) {
         Console.instance().write(message);
     }
 

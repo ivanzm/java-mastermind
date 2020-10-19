@@ -10,10 +10,15 @@ public class Result {
     }
 
     boolean isWinner() {
-        return false;
+        return this.blacks == Result.MAX_HOLES;
     }
 
     void print() {
-        System.out.println("");
+        Message.write(" --> ");
+        Message.write(this.blacks);
+        Message.RESULT_BLACKS.write();
+        Message.write(this.whites);
+        Message.RESULT_WHITES.write();
+        Message.writeln("");
     }
 }

@@ -19,10 +19,6 @@ enum Color {
         this.initial = initial;
     }
 
-    static Color get(int index) {
-        return Color.values()[index];
-    }
-
     void print() {
         Console.instance().write(initial);
     }
@@ -38,8 +34,8 @@ enum Color {
 
     static Color getInstance(char character) {
         for (int i = 0; i < Color.values().length; i++) {
-            if (Color.get(i).initial == character) {
-                return Color.get(i);
+            if (Color.values()[i].initial == character) {
+                return Color.values()[i];
             }
         }
         return null;
