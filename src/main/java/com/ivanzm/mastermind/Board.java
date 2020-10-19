@@ -21,8 +21,9 @@ public class Board {
     }
 
     boolean isFinished() {
-        return false;
+        return this.results[this.attemps].isWinner() || this.attemps == MAX_ATTEMPS;
     }
+
 
     void print() {
         Message.writeln("");

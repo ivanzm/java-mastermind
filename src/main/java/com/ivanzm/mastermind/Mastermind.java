@@ -19,6 +19,7 @@ public class Mastermind {
             proposedCombination.read();
             this.board.add(proposedCombination);
         } while (!this.board.isFinished());
+
     }
 
     private boolean isResumedGame() {
