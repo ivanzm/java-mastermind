@@ -1,81 +1,90 @@
 @startuml
 
-class Mastermind {
-    - isResumedGame()
-    - void playGame()
-    + play()
-    + static void main(String[] args)
+title Mastermind
+
+package Mastermind <<Rectangle>> {
+
+    class Mastermind {
+        - isResumedGame()
+        - void playGame()
+        + play()
+        + static void main(String[] args)
+    }
+
+    class Board {
+        - final int MAX_ATTEMPS
+        - int attemps
+        - Result[] results
+        - ProposedCombination[] proposedCombinations
+        - SecretCombination secretCombination
+        isFinished()
+        isWinner()
+        isLooser()
+        add(ProposedCombination proposedCombination)
+        print()
+        printFinalResult()
+    }
+
+    abstract class Combination {
+        Color[] combination;
+    }
+
+    class SecretCombination {
+        - boolean hasDuplicates()
+        Result getResult(ProposedCombination proposedCombination)
+        println()
+    }
+
+    class ProposedCombination {
+        - Error checkError()
+        - boolean hasDuplicates(String combination, Color color))
+        - int ocurrences(String combination, Color color)
+        read()
+        println()
+    }
+    class Result {
+        - int whites
+        - int blacks
+        + final int MAX_HOLES
+        isWinner()
+        print()
+    }
+    enum Messages{
+        TITLE
+        ATTEMPS
+        RESULT_BLACKS
+        RESULT_WHITES
+        SECRET_COMBINATION
+        PROPOSE_COMBINATION
+        LOOSER
+        WINNER
+        write()
+        write(String message)
+        write(int message)
+        writeln()
+        writeln(String message)
+    }
+    enum Color {
+        RED
+        GREEN
+        YELLOW
+        ORANGE
+        PURPLE
+        BLUE
+        - char initial
+        print()
+        Color getInstance(char character)
+        boolean contains(Color color)
+        Color random()
+    }
+    enum Error {
+        LENGTH "Wrong proposed combination length"
+        COLOR "Wrong colors, they must be: rbygop"
+    }
 }
 
-class Board {
-    - final int MAX_ATTEMPS
-    - int attemps
-    - Result[] results
-    - ProposedCombination[] proposedCombinations
-    - SecretCombination secretCombination
-    isFinished()
-    isWinner()
-    isLooser()
-    add(ProposedCombination proposedCombination)
-    print()
-    printFinalResult()
-}
-
-abstract class Combination {
-    Color[] combination;
-}
-
-class SecretCombination {
-    - boolean hasDuplicates()
-    Result getResult(ProposedCombination proposedCombination)
-    println()
-}
-
-class ProposedCombination {
-    - Error checkError()
-    - boolean hasDuplicates(String combination, Color color))
-    - int ocurrences(String combination, Color color)
-    read()
-    println()
-}
-class Result {
-    - int whites
-    - int blacks
-    + final int MAX_HOLES
-    isWinner()
-    print()
-}
-enum Messages{
-    TITLE
-    ATTEMPS
-    RESULT_BLACKS
-    RESULT_WHITES
-    SECRET_COMBINATION
-    PROPOSE_COMBINATION
-    LOOSER
-    WINNER
-    write()
-    write(String message)
-    write(int message)
-    writeln()
-    writeln(String message)
-}
-enum Color {
-    RED
-    GREEN
-    YELLOW
-    ORANGE
-    PURPLE
-    BLUE
-    - char initial
-    print()
-    Color getInstance(char character)
-    boolean contains(Color color)
-    Color random()
-}
-enum Error {
-    LENGTH "Wrong proposed combination length"
-    COLOR "Wrong colors, they must be: rbygop"
+package utils <<Rectangle>> {
+    class Console
 }
 
 Mastermind *-- Board
@@ -92,5 +101,11 @@ Mastermind ..> Messages
 Board ..> Messages
 Result ..> Messages
 ProposedCombination ..> Messages
+
+Mastermind ..> Console
+Color ..> Console
+Error ..> Console
+Messages ..> Console
+ProposedCombination ..> Console
 
 @enduml

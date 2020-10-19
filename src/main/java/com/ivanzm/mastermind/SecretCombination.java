@@ -1,7 +1,5 @@
 package com.ivanzm.mastermind;
 
-import com.ivanzm.utils.Console;
-
 public class SecretCombination extends Combination {
 
     SecretCombination() {
@@ -39,7 +37,7 @@ public class SecretCombination extends Combination {
     }
 
     void println() {
-        Console.instance().write("xxxx - ");
+        Message.write("xxxx - ");
         for (Color color : this.combination) {
             color.print();
         }
