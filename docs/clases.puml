@@ -1,7 +1,7 @@
 @startuml
 
 class Mastermind {
-- isResumeGame()
+- isResumedGame()
 - void playGame()
 + play()
 + static void main(String[] args)
@@ -13,9 +13,12 @@ class Board {
 - Result[] results
 - ProposedCombination[] proposedCombinations
 - SecretCombination secretCombination
-+ isFinished()
-+ add(ProposedCombination proposedCombination)
-+ print()
+isFinished()
+isWinner()
+isLooser()
+add(ProposedCombination proposedCombination)
+print()
+printFinalResult()
 }
 
 abstract class Combination {
@@ -23,12 +26,15 @@ Color[] combination;
 }
 
 class SecretCombination {
+- boolean hasDuplicates()
 Result getResult(ProposedCombination proposedCombination)
 println()
 }
 
 class ProposedCombination {
 - Error checkError()
+- boolean hasDuplicates(String combination, Color color))
+- int ocurrences(String combination, Color color)
 read()
 println()
 }
@@ -44,11 +50,17 @@ print()
 enum Messages{
 TITLE
 ATTEMPS
-RESULT
+RESULT_BLACKS
+RESULT_WHITES
 SECRET_COMBINATION
 PROPOSE_COMBINATION
 LOOSER
 WINNER
+write()
+write(String message)
+write(int message)
+writeln()
+writeln(String message)
 }
 enum Color {
 RED
@@ -58,9 +70,10 @@ ORANGE
 PURPLE
 BLUE
 - char initial
-+ get(int index)
-+ write()
-
+print()
+Color getInstance(char character)
+boolean contains(Color color)
+Color random()
 }
 enum Error {
 LENGTH "Wrong proposed combination length"
