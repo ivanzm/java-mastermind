@@ -23,20 +23,20 @@ Color[] combination;
 }
 
 class SecretCombination {
-- void generateCombination()
-boolean matchCombination(ProposedCombination proposedCombination)
-print()
+Result getResult(ProposedCombination proposedCombination)
+println()
 }
 
 class ProposedCombination {
 - Error checkError()
 read()
+println()
 }
 
 class Result {
-+ final int MAX_HOLES
 - int whites
 - int blacks
++ final int MAX_HOLES
 isWinner()
 print()
 }
@@ -51,12 +51,12 @@ LOOSER
 WINNER
 }
 enum Color {
-RED('r'),
-GREEN('g'),
-YELLOW('y'),
-ORANGE('o'),
-PURPLE('p'),
-BLUE('b');
+RED
+GREEN
+YELLOW
+ORANGE
+PURPLE
+BLUE
 - char initial
 + get(int index)
 + write()
