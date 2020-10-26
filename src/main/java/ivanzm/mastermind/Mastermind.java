@@ -1,8 +1,8 @@
-package usantatecla.mastermind;
+package ivanzm.mastermind;
 
-import usantatecla.mastermind.controllers.Controller;
-import usantatecla.mastermind.controllers.Logic;
-import usantatecla.mastermind.views.View;
+import ivanzm.mastermind.controllers.Controller;
+import ivanzm.mastermind.controllers.Logic;
+import ivanzm.mastermind.views.View;
 
 public abstract class Mastermind {
 

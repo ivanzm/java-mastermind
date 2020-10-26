@@ -1,4 +1,4 @@
-package usantatecla.mastermind.controllers;
+package ivanzm.mastermind.controllers;
 
 public interface ControllersVisitor {
 

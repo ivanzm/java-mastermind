@@ -1,4 +1,4 @@
-package usantatecla.mastermind.models;
+package ivanzm.mastermind.models;
 
 public class State {
 

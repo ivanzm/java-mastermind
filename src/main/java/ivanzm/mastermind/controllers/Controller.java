@@ -1,23 +1,23 @@
-package usantatecla.mastermind.controllers;
+package ivanzm.mastermind.controllers;
 
-import usantatecla.mastermind.models.Game;
-import usantatecla.mastermind.models.State;
+import ivanzm.mastermind.models.Game;
+import ivanzm.mastermind.models.State;
 
 public abstract class Controller {
 
-	protected Game game;
+    protected Game game;
 
-	protected State state;
+    protected State state;
 
-	Controller(Game game, State state) {
-		this.game = game;
-		this.state = state;
-	}
+    Controller(Game game, State state) {
+        this.game = game;
+        this.state = state;
+    }
 
-	public int getWidth() {
-		return this.game.getWidth();
-	}
+    public int getWidth() {
+        return this.game.getWidth();
+    }
 
-	public abstract void accept(ControllersVisitor controllersVisitor);
+    public abstract void accept(ControllersVisitor controllersVisitor);
 
 }

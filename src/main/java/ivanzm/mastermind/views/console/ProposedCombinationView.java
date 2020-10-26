@@ -1,13 +1,13 @@
-package usantatecla.mastermind.views.console;
+package ivanzm.mastermind.views.console;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import usantatecla.mastermind.controllers.ProposalController;
-import usantatecla.mastermind.types.Color;
-import usantatecla.mastermind.views.console.ColorView;
-import usantatecla.utils.WithConsoleView;
-import usantatecla.mastermind.views.MessageView;
+import ivanzm.mastermind.controllers.ProposalController;
+import ivanzm.mastermind.types.Color;
+import ivanzm.mastermind.views.console.ColorView;
+import ivanzm.utils.WithConsoleView;
+import ivanzm.mastermind.views.MessageView;
 
 class ProposedCombinationView extends WithConsoleView {
 

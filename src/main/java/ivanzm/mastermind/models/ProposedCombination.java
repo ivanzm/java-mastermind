@@ -1,8 +1,8 @@
-package usantatecla.mastermind.models;
+package ivanzm.mastermind.models;
 
 import java.util.List;
 
-import usantatecla.mastermind.types.Color;
+import ivanzm.mastermind.types.Color;
 
 class ProposedCombination extends Combination {
 

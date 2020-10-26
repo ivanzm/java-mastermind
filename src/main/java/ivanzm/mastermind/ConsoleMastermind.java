@@ -1,7 +1,7 @@
-package usantatecla.mastermind;
+package ivanzm.mastermind;
 
-import usantatecla.mastermind.views.View;
-import usantatecla.mastermind.views.console.ConsoleView;
+import ivanzm.mastermind.views.View;
+import ivanzm.mastermind.views.console.ConsoleView;
 
 public class ConsoleMastermind extends Mastermind {
 

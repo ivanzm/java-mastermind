@@ -1,9 +1,9 @@
-package usantatecla.mastermind.views.graphics;
+package ivanzm.mastermind.views.graphics;
 
-import javax.swing.JLabel;
+import ivanzm.mastermind.views.MessageView;
+import ivanzm.mastermind.controllers.ProposalController;
 
-import usantatecla.mastermind.controllers.ProposalController;
-import usantatecla.mastermind.views.MessageView;
+import javax.swing.*;
 
 @SuppressWarnings("serial")
 class ResultView extends JLabel {

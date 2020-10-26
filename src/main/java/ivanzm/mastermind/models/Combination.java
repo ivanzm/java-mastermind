@@ -1,9 +1,9 @@
-package usantatecla.mastermind.models;
+package ivanzm.mastermind.models;
+
+import ivanzm.mastermind.types.Color;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import usantatecla.mastermind.types.Color;
 
 public abstract class Combination {
 

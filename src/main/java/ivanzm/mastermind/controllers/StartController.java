@@ -1,7 +1,7 @@
-package usantatecla.mastermind.controllers;
+package ivanzm.mastermind.controllers;
 
-import usantatecla.mastermind.models.Game;
-import usantatecla.mastermind.models.State;
+import ivanzm.mastermind.models.Game;
+import ivanzm.mastermind.models.State;
 
 public class StartController extends Controller {
 

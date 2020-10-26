@@ -1,8 +1,8 @@
-package usantatecla.mastermind.views.console;
+package ivanzm.mastermind.views.console;
 
-import usantatecla.mastermind.controllers.ProposalController;
-import usantatecla.mastermind.views.MessageView;
-import usantatecla.utils.WithConsoleView;
+import ivanzm.mastermind.controllers.ProposalController;
+import ivanzm.mastermind.views.MessageView;
+import ivanzm.utils.WithConsoleView;
 
 public class AttemptsView extends WithConsoleView {
 

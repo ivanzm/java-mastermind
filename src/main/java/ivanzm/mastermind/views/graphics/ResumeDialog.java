@@ -1,8 +1,8 @@
-package usantatecla.mastermind.views.graphics;
+package ivanzm.mastermind.views.graphics;
 
-import javax.swing.JOptionPane;
+import ivanzm.mastermind.views.MessageView;
 
-import usantatecla.mastermind.views.MessageView;
+import javax.swing.*;
 
 class ResumeDialog {
 

@@ -1,4 +1,4 @@
-package usantatecla.mastermind.views.graphics;
+package ivanzm.mastermind.views.graphics;
 
 import java.awt.GridBagConstraints;
 

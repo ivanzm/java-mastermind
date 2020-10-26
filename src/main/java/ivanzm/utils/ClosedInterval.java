@@ -1,4 +1,4 @@
-package usantatecla.utils;
+package ivanzm.utils;
 
 public class ClosedInterval {
 

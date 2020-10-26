@@ -1,12 +1,12 @@
-package usantatecla.mastermind.controllers;
+package ivanzm.mastermind.controllers;
 
 import java.util.List;
 
-import usantatecla.mastermind.models.Combination;
-import usantatecla.mastermind.models.Game;
-import usantatecla.mastermind.models.State;
-import usantatecla.mastermind.types.Color;
-import usantatecla.mastermind.types.Error;
+import ivanzm.mastermind.models.Combination;
+import ivanzm.mastermind.models.Game;
+import ivanzm.mastermind.models.State;
+import ivanzm.mastermind.types.Color;
+import ivanzm.mastermind.types.Error;
 
 public class ProposalController extends Controller {
 

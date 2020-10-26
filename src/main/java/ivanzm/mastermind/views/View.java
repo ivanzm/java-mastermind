@@ -1,7 +1,7 @@
-package usantatecla.mastermind.views;
+package ivanzm.mastermind.views;
 
-import usantatecla.mastermind.controllers.Controller;
-import usantatecla.mastermind.controllers.ControllersVisitor;
+import ivanzm.mastermind.controllers.Controller;
+import ivanzm.mastermind.controllers.ControllersVisitor;
 
 public abstract class View implements ControllersVisitor {
 

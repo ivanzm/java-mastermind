@@ -1,11 +1,11 @@
-package usantatecla.mastermind.controllers;
+package ivanzm.mastermind.controllers;
+
+import ivanzm.mastermind.models.Game;
+import ivanzm.mastermind.models.State;
+import ivanzm.mastermind.models.StateValue;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import usantatecla.mastermind.models.Game;
-import usantatecla.mastermind.models.State;
-import usantatecla.mastermind.models.StateValue;
 
 public class Logic {
 

@@ -1,8 +1,8 @@
-package usantatecla.mastermind.views.console;
+package ivanzm.mastermind.views.console;
 
-import usantatecla.mastermind.controllers.ResumeController;
-import usantatecla.mastermind.views.MessageView;
-import usantatecla.utils.YesNoDialog;
+import ivanzm.mastermind.controllers.ResumeController;
+import ivanzm.mastermind.views.MessageView;
+import ivanzm.utils.YesNoDialog;
 
 class ResumeView {
 

@@ -1,9 +1,9 @@
-package usantatecla.mastermind.views.console;
+package ivanzm.mastermind.views.console;
 
-import usantatecla.mastermind.types.Color;
-import usantatecla.utils.Console;
+import ivanzm.mastermind.types.Color;
+import ivanzm.utils.Console;
 
-class ColorView extends usantatecla.mastermind.views.ColorView {
+class ColorView extends ivanzm.mastermind.views.ColorView {
 
     ColorView(Color color) {
         super(color);

@@ -1,8 +1,8 @@
-package usantatecla.mastermind.views.console;
+package ivanzm.mastermind.views.console;
 
-import usantatecla.mastermind.controllers.Controller;
-import usantatecla.mastermind.views.MessageView;
-import usantatecla.utils.WithConsoleView;
+import ivanzm.mastermind.controllers.Controller;
+import ivanzm.mastermind.views.MessageView;
+import ivanzm.utils.WithConsoleView;
 
 class SecretCombinationView extends WithConsoleView {
 

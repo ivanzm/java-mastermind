@@ -1,7 +1,7 @@
-package usantatecla.mastermind;
+package ivanzm.mastermind;
 
-import usantatecla.mastermind.views.View;
-import usantatecla.mastermind.views.graphics.GraphicsView;
+import ivanzm.mastermind.views.View;
+import ivanzm.mastermind.views.graphics.GraphicsView;
 
 public class GraphicsMastermind extends Mastermind {
 

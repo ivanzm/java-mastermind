@@ -1,4 +1,4 @@
-package usantatecla.mastermind.types;
+package ivanzm.mastermind.types;
 
 public enum Error {
 

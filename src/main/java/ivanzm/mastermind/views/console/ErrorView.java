@@ -1,9 +1,9 @@
-package usantatecla.mastermind.views.console;
+package ivanzm.mastermind.views.console;
 
-import usantatecla.mastermind.types.Error;
-import usantatecla.utils.Console;
+import ivanzm.mastermind.types.Error;
+import ivanzm.utils.Console;
 
-class ErrorView extends usantatecla.mastermind.views.ErrorView {
+class ErrorView extends ivanzm.mastermind.views.ErrorView {
 
     ErrorView(Error error) {
         super(error);

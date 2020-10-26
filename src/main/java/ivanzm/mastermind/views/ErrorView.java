@@ -1,6 +1,6 @@
-package usantatecla.mastermind.views;
+package ivanzm.mastermind.views;
 
-import usantatecla.mastermind.types.Error;
+import ivanzm.mastermind.types.Error;
 
 public class ErrorView {
 

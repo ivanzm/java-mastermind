@@ -1,4 +1,4 @@
-package usantatecla.mastermind.views;
+package ivanzm.mastermind.views;
 
 public enum MessageView {
     ATTEMPTS("#attempts attempt(s): "),

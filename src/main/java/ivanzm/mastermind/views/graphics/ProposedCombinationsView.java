@@ -1,10 +1,10 @@
-package usantatecla.mastermind.views.graphics;
+package ivanzm.mastermind.views.graphics;
 
 import java.awt.GridBagLayout;
 
 import javax.swing.JPanel;
 
-import usantatecla.mastermind.controllers.ProposalController;
+import ivanzm.mastermind.controllers.ProposalController;
 
 @SuppressWarnings("serial")
 class ProposedCombinationsView extends JPanel {

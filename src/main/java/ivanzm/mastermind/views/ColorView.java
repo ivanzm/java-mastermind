@@ -1,6 +1,6 @@
-package usantatecla.mastermind.views;
+package ivanzm.mastermind.views;
 
-import usantatecla.mastermind.types.Color;
+import ivanzm.mastermind.types.Color;
 
 public class ColorView {
 
