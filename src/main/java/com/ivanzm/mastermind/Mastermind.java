@@ -32,13 +32,10 @@ public class Mastermind {
         do {
             Message.RESUME.writeln();
             answer = Console.instance().readChar("");
-            error = answer == AFFIRMATIVE || answer == NEGATIVE ? false : true;
+            error = answer != AFFIRMATIVE && answer != NEGATIVE;
         } while (error);
 
-        if (!error && answer == AFFIRMATIVE) {
-            return true;
-        }
-        return false;
+        return answer == AFFIRMATIVE;
     }
 
     public static void main(String[] args) {
