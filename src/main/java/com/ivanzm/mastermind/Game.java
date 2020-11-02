@@ -8,10 +8,7 @@ public class Game {
     private SecretCombination secretCombination;
 
     Game() {
-        this.secretCombination = new SecretCombination();
-        this.proposedCombinations = new ProposedCombination[MAX_ATTEMPS];
-        this.results = new Result[MAX_ATTEMPS];
-        this.attemps = 0;
+        this.reset();
     }
 
     public void add(ProposedCombination proposedCombination) {
@@ -20,8 +17,11 @@ public class Game {
         attemps++;
     }
 
-    public boolean isFinished() {
-        return isWinner() || isLooser();
+    public void reset() {
+        this.secretCombination = new SecretCombination();
+        this.proposedCombinations = new ProposedCombination[MAX_ATTEMPS];
+        this.results = new Result[MAX_ATTEMPS];
+        this.attemps = 0;
     }
 
     public boolean isWinner() {
@@ -35,6 +35,10 @@ public class Game {
 
     public int getAttemps() {
         return attemps;
+    }
+
+    public Color[] getSecretCombination() {
+        return secretCombination.combination;
     }
 
     public Result[] getResults() {

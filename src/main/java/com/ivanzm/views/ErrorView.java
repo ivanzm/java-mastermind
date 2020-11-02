@@ -7,7 +7,7 @@ import com.ivanzm.utils.Console;
 public class ErrorView {
     private static final String[] MESSAGES = {
             "Wrong proposed combination length",
-            "Wrong colors, they must be: rbygop",
+            "Wrong colors, they must be: " + ColorView.getInitials(),
             "Wrong colors, repeated color"};
 
 

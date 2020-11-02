@@ -32,6 +32,9 @@ public class TurnView {
             return true;
         } else if (this.game.isLooser()) {
             MessageView.LOOSER.writeln();
+            MessageView.write("Secret Code: ");
+            new ColorView(this.game.getSecretCombination()).printCombination();
+            MessageView.writeln("");
             return true;
         } else {
             return false;

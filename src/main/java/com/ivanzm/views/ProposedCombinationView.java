@@ -6,7 +6,7 @@ import com.ivanzm.mastermind.Error;
 import com.ivanzm.mastermind.ProposedCombination;
 import com.ivanzm.utils.Console;
 
-public class ProposedCombinationView {
+class ProposedCombinationView {
 
     private ProposedCombination proposedCombination;
 

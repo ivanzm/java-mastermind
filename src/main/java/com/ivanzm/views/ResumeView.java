@@ -21,6 +21,11 @@ public class ResumeView {
             error = answer != AFFIRMATIVE && answer != NEGATIVE;
         } while (error);
 
-        return answer == AFFIRMATIVE;
+        if (answer == AFFIRMATIVE) {
+            this.game.reset();
+            return true;
+        }
+
+        return false;
     }
 }

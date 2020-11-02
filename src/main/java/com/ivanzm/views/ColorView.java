@@ -9,13 +9,36 @@ class ColorView {
 
     private static final char[] INITIALS = {'r', 'g', 'y', 'o', 'p', 'b'};
     private Color color;
+    private Color[] colors;
 
     ColorView(Color color) {
         this.color = color;
     }
 
+    ColorView(Color[] colors) {
+        this.colors = colors;
+    }
+
     void print() {
         Console.instance().write(INITIALS[this.color.ordinal()]);
+    }
+
+    void println() {
+        Console.instance().writeln(INITIALS[this.color.ordinal()]);
+    }
+
+    void printCombination() {
+        for (Color color : colors) {
+            new ColorView(color).print();
+        }
+    }
+
+    public static String getInitials() {
+        String result = "";
+        for (char character : ColorView.INITIALS) {
+            result += character;
+        }
+        return result;
     }
 
     static boolean contains(Color color) {
