@@ -1,7 +1,7 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
 
-import com.ivanzm.mastermind.Error;
+import com.ivanzm.mastermind.models.Error;
 import com.ivanzm.utils.Console;
 
 public class ErrorView {

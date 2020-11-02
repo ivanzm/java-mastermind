@@ -1,6 +1,7 @@
 package com.ivanzm.mastermind;
 
-import com.ivanzm.views.View;
+import com.ivanzm.mastermind.models.Game;
+import com.ivanzm.mastermind.views.View;
 
 public class Mastermind {
 

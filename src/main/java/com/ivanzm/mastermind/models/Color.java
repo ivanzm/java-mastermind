@@ -1,4 +1,4 @@
-package com.ivanzm.mastermind;
+package com.ivanzm.mastermind.models;
 
 public enum Color {
     RED,

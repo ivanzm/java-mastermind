@@ -1,6 +1,6 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
-import com.ivanzm.mastermind.Color;
+import com.ivanzm.mastermind.models.Color;
 import com.ivanzm.utils.Console;
 
 import java.util.Random;

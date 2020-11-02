@@ -1,9 +1,9 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
-import com.ivanzm.mastermind.Color;
-import com.ivanzm.mastermind.Combination;
-import com.ivanzm.mastermind.Error;
-import com.ivanzm.mastermind.ProposedCombination;
+import com.ivanzm.mastermind.models.Color;
+import com.ivanzm.mastermind.models.Combination;
+import com.ivanzm.mastermind.models.Error;
+import com.ivanzm.mastermind.models.ProposedCombination;
 import com.ivanzm.utils.Console;
 
 class ProposedCombinationView {

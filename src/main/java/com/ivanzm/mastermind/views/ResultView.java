@@ -1,6 +1,6 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
-import com.ivanzm.mastermind.Result;
+import com.ivanzm.mastermind.models.Result;
 
 public class ResultView {
 

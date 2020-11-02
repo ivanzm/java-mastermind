@@ -1,7 +1,7 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
-import com.ivanzm.mastermind.Game;
-import com.ivanzm.mastermind.ProposedCombination;
+import com.ivanzm.mastermind.models.Game;
+import com.ivanzm.mastermind.models.ProposedCombination;
 
 public class TurnView {
     private Game game;

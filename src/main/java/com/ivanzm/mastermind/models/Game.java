@@ -1,4 +1,4 @@
-package com.ivanzm.mastermind;
+package com.ivanzm.mastermind.models;
 
 public class Game {
     private static final int MAX_ATTEMPS = 10;
@@ -7,7 +7,7 @@ public class Game {
     private ProposedCombination[] proposedCombinations;
     private SecretCombination secretCombination;
 
-    Game() {
+    public Game() {
         this.reset();
     }
 

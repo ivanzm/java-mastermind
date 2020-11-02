@@ -1,6 +1,6 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
-import com.ivanzm.mastermind.Game;
+import com.ivanzm.mastermind.models.Game;
 
 public class View {
 

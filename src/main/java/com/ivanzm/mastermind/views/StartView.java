@@ -1,4 +1,4 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
 public class StartView {
 

@@ -1,4 +1,4 @@
-package com.ivanzm.mastermind;
+package com.ivanzm.mastermind.models;
 
 public abstract class Combination {
     public static final int MAX_HOLES = 4;

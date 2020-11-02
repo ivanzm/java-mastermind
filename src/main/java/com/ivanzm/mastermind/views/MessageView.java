@@ -1,4 +1,4 @@
-package com.ivanzm.views;
+package com.ivanzm.mastermind.views;
 
 import com.ivanzm.utils.Console;
 
