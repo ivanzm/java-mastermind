@@ -1,41 +1,19 @@
 package com.ivanzm.mastermind;
 
-import com.ivanzm.utils.Console;
+import com.ivanzm.views.View;
 
 public class Mastermind {
 
-    private Board board;
+    private Game game;
+    private View view;
 
-    public void play() {
-        do {
-            this.playGame();
-        } while (this.isResumedGame());
+    private Mastermind() {
+        game = new Game();
+        view = new View(this.game);
     }
 
-    private void playGame() {
-        Message.TITLE.writeln();
-        this.board = new Board();
-        do {
-            this.board.print();
-            ProposedCombination proposedCombination = new ProposedCombination();
-            proposedCombination.read();
-            this.board.add(proposedCombination);
-        } while (!this.board.isFinished());
-        this.board.printFinalResult();
-    }
-
-    private boolean isResumedGame() {
-        final char AFFIRMATIVE = 'y';
-        final char NEGATIVE = 'n';
-        boolean error;
-        char answer;
-        do {
-            Message.RESUME.writeln();
-            answer = Console.instance().readChar("");
-            error = answer != AFFIRMATIVE && answer != NEGATIVE;
-        } while (error);
-
-        return answer == AFFIRMATIVE;
+    private void play() {
+        this.view.interact();
     }
 
     public static void main(String[] args) {

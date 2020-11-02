@@ -1,7 +1,6 @@
 package com.ivanzm.mastermind;
 
 public class Result {
-    public static final int MAX_HOLES = 4;
     int whites, blacks = 0;
 
     Result(int whites, int blacks) {
@@ -10,15 +9,14 @@ public class Result {
     }
 
     boolean isWinner() {
-        return this.blacks == Result.MAX_HOLES;
+        return this.blacks == Combination.MAX_HOLES;
     }
 
-    void print() {
-        Message.write(" --> ");
-        Message.write(this.blacks);
-        Message.RESULT_BLACKS.write();
-        Message.write(this.whites);
-        Message.RESULT_WHITES.write();
-        Message.writeln("");
+    public int getWhites() {
+        return whites;
+    }
+
+    public int getBlacks() {
+        return blacks;
     }
 }
